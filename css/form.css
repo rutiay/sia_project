@@ -1,0 +1,61 @@
+body{
+    background: url(../media/img/singers-sia-wallpaper-preview.jpg);
+    background-size: cover;
+}
+
+label{
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+input[type=text], input[type=email]{
+    font-size: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    background: rgb(241 171 216);
+}
+
+select{
+    font-size: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    background: rgb(241 171 216); 
+}
+
+input[type=submit]{
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 5%;
+ }
+
+ input[type=submit]:hover{
+     background: orchid;
+     color: black;
+     font-size: 22px;
+ }
+
+.form {
+    width: 50%;
+    height: 90vh;
+    background: linear-gradient(pink, white);
+    border-radius: 10%;
+    text-align: center;
+}
+
+.form h1{
+    font-family: system-ui;
+    font-size: 35px;
+}
+
+@media screen and (max-width:426px) {
+    .form{
+        width: 100%;
+    }
+
+    body{
+        background: rgb(248, 164, 178);
+    }
+    
+}
+

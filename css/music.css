@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/musicbg.jpg) fixed;
+    color: white;
+}
+
+
+.navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+}
+
+.navBar li{
+    padding: 20px;
+    list-style-type: none;
+}
+
+.navBar li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.navBar li a:hover{
+    color: #da9b88;;
+    transition: 1s;
+}
+
+#logo_title{
+    width: 130px;
+    height: 100px;
+}
+
+#mainTitle{
+    width: 100%;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    height: 95vh;
+    background: url(../media/img/bgalbumpage.png);
+    background-size: contain;
+    text-align: center;
+    color: black;
+    font-size: 80px;
+}
+
+#video iframe{
+    width: 100%;
+    height: 100vh;
+}
+
+#albumTitle{
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 10px;
+}
+
+
+.album-card{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 200px);
+    width: 100%;
+    height: 500px;
+}
+
+.album-card ul li{
+    list-style-type: none;
+}
+
+.album-card:first-child img{
+    grid-area: 1/2/4/5;
+    width: 100%;
+}
+
+.album-card:first-child ol{
+    font-family: 'Satisfy', cursive;
+    font-size: 22px;
+    grid-area: 2/6/4/9;
+}
+
+.album-card:nth-child(2) img{
+    grid-area: 2/7/5/10;
+    width: 100%;
+}
+
+.album-card:nth-child(2) ol{
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    grid-area: 3/4/4/7;
+}
+
+.album-card:nth-child(3) img{
+    grid-area: 3/2/4/5;
+    width: 100%;
+}
+
+.album-card:nth-child(3) ol{
+    font-family: 'Rock Salt', cursive;
+    grid-area: 4/7/6/9;
+}
+
+.album-card:nth-child(4) img{
+    grid-area: 4/7/6/10;
+    width: 100%;
+}
+
+.album-card:nth-child(4) ol{
+    font-family: 'Satisfy', cursive;
+    font-size: 22px;
+    grid-area: 5/4/7/7;
+}
+
+.album-card:nth-child(5) img{
+    grid-area: 5/2/6/5;
+    width: 100%;
+}
+
+.album-card:nth-child(5) ol{
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 21px;
+    font-weight: 600;
+    grid-area: 6/7/9/11;
+}
+
+.album-card:last-child img{
+    grid-area: 7/7/9/10;
+    width: 100%;
+}
+
+.album-card:last-child ol{
+    font-family: 'Rock Salt', cursive;
+    grid-area: 8/4/9/8;
+}
+
+#footerNav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 1500px;
+    background: white;
+}
+
+#footerNav li{
+    list-style-type: none;
+}
+
+#footerNav li a i{
+    font-size: 30px;
+    color: black;
+}
+
+#footerNav li a i:hover{
+    color: #da9b88;
+    transition: 500ms;
+}
+
+#footerNav img{
+    width: 100px;
+    height: 95px;
+}
+
+@media screen and (max-width: 769px){
+    body{
+        background-size: cover;
+    }
+    
+    .album-card:first-child ol {
+        grid-area: 1/6/3/9;
+    }
+
+    .album-card:nth-child(2) ol {
+        grid-area: 2/3/3/7;
+    }
+
+    .album-card:nth-child(3) img {
+        grid-area: 2/2/4/5;
+    }
+
+    .album-card:nth-child(3) ol {
+        grid-area: 3/6/5/9;
+    }
+
+    .album-card:nth-child(4) img {
+        grid-area: 3/7/5/10;
+    }
+
+    .album-card:nth-child(4) ol {
+        grid-area: 4/4/6/7;
+    }
+
+    .album-card:nth-child(5) img {
+        grid-area: 4/2/5/5;
+    }
+
+    .album-card:nth-child(5) ol {
+        grid-area: 4/7/8/11;
+    }
+
+    .album-card:last-child img {
+        grid-area: 4/7/6/10;
+    }
+
+    .album-card:last-child ol {
+        grid-area: 5/4/6/8;
+    }
+
+    #footerNav{
+        top: 1000px;
+
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .navBar li {
+        padding: 10px;
+    }
+
+    .navBar li a {
+        font-size: 15px;
+    }
+
+    #logo_title {
+        width: 150px;
+        height: 150px;
+    }
+
+    #mainTitle{
+        height: 50vh;
+        font-size: 50px;
+    }
+
+    .album-card {
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .album-card:first-child img{
+        width: 50%;
+    }
+
+    .album-card:nth-child(2) img{
+        width: 50%; 
+    }
+
+    .album-card:nth-child(2) ol{
+        font-size: 27px;
+    }
+
+    .album-card:nth-child(3) img{
+        width: 55%;
+    }
+
+    .album-card:nth-child(4) img{
+        width: 58%;
+    }
+
+    .album-card:nth-child(5) img{
+        width: 55%;
+    }
+
+    .album-card:last-child img{
+        width: 50%;
+    }
+
+    #footerNav{
+        top: 200px;
+    }
+}
