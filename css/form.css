@@ -27,12 +27,24 @@ input[type=submit]{
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 5%;
+    animation: changeColors 3s linear 2s infinite alternate;
  }
 
  input[type=submit]:hover{
-     background: orchid;
      color: black;
-     font-size: 22px;
+     font-size: 22px;   
+ }
+
+ @keyframes changeColors{
+    0%{
+        background: rgb(79, 226, 219);
+    }
+    50%{
+        background: rgb(211, 89, 195);
+    }
+    100%{
+        background: rgb(194, 36, 49);
+    }
  }
 
 .form {
